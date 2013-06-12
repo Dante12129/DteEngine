@@ -667,7 +667,7 @@ WARN_LOGFILE           = C:\Users\Main\Documents\Programs\DteEngine\doxygen\doxy
 # directories like "/usr/src/myproject". Separate the files or directories 
 # with spaces.
 
-INPUT                  = "..\src\StateManager.cpp" \
+INPUT                  = ../ \
                          "..\version.h" \
                          "..\Include\StateManager.hpp" \
                          "..\modules.h" \

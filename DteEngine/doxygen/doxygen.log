@@ -1,10 +1,2 @@
 warning: source ..\Include\StateManager.hpp is not a readable file or directory... skipping.
 warning: source ..\Include\State.hpp is not a readable file or directory... skipping.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:5: warning: documented symbol `dte::StateManager::StateManager' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:7: warning: documented symbol `dte::StateManager::StateManager' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:10: warning: documented symbol `dte::StateManager::~StateManager' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:12: warning: documented symbol `void dte::StateManager::HandleEvents' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:13: warning: documented symbol `void dte::StateManager::Logic' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:14: warning: documented symbol `void dte::StateManager::Render' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/StateManager.cpp:17: warning: documented symbol `void dte::StateManager::SwitchState' was not declared or defined.
-C:/Users/Main/Documents/Programs/DteEngine/src/State.cpp:5: warning: documented symbol `dte::State::~State' was not declared or defined.

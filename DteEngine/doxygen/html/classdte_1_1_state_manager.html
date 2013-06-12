@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,33 +102,170 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82a066bd11a6505e4ab987f9b0c9443f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82a066bd11a6505e4ab987f9b0c9443f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StateManager</b> (<a class="el" href="classdte_1_1_state.html">State</a> *first_state)</td></tr>
+<tr class="memitem:aeac92535200da7cd9e02a6f12f76f509"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#aeac92535200da7cd9e02a6f12f76f509">StateManager</a> ()</td></tr>
+<tr class="memdesc:aeac92535200da7cd9e02a6f12f76f509"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor.  <a href="#aeac92535200da7cd9e02a6f12f76f509">More...</a><br/></td></tr>
+<tr class="separator:aeac92535200da7cd9e02a6f12f76f509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a066bd11a6505e4ab987f9b0c9443f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a82a066bd11a6505e4ab987f9b0c9443f">StateManager</a> (<a class="el" href="classdte_1_1_state.html">State</a> *first_state)</td></tr>
+<tr class="memdesc:a82a066bd11a6505e4ab987f9b0c9443f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main constructor.  <a href="#a82a066bd11a6505e4ab987f9b0c9443f">More...</a><br/></td></tr>
 <tr class="separator:a82a066bd11a6505e4ab987f9b0c9443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632c421d6b582b10226250f6d75fc997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a632c421d6b582b10226250f6d75fc997"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> ()</td></tr>
+<tr class="memitem:a67053c9ff3ad33446d795c90e78758ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a67053c9ff3ad33446d795c90e78758ba">~StateManager</a> ()</td></tr>
+<tr class="separator:a67053c9ff3ad33446d795c90e78758ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632c421d6b582b10226250f6d75fc997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a632c421d6b582b10226250f6d75fc997">HandleEvents</a> ()</td></tr>
 <tr class="separator:a632c421d6b582b10226250f6d75fc997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18238248da85149ceda1f41732133f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa18238248da85149ceda1f41732133f4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Logic</b> (sf::Time &amp;)</td></tr>
+<tr class="memitem:aa18238248da85149ceda1f41732133f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#aa18238248da85149ceda1f41732133f4">Logic</a> (sf::Time &amp;)</td></tr>
 <tr class="separator:aa18238248da85149ceda1f41732133f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7daef1196efcac9fa0240dc2451d8f50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7daef1196efcac9fa0240dc2451d8f50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Render</b> ()</td></tr>
+<tr class="memitem:a7daef1196efcac9fa0240dc2451d8f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a7daef1196efcac9fa0240dc2451d8f50">Render</a> ()</td></tr>
 <tr class="separator:a7daef1196efcac9fa0240dc2451d8f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade5f19286c1ceefc32d58dd1a69b59e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchState</b> ()</td></tr>
+<tr class="memitem:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#ade5f19286c1ceefc32d58dd1a69b59e9">SwitchState</a> ()</td></tr>
 <tr class="separator:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that manages the states in a game. </p>
-<p>This class manages states using the <a class="el" href="classdte_1_1_state.html" title="Interface that specifies a state in the game.">State</a> class. It deals with changing states and using them so you don't have to. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<p>This class manages states using the <a class="el" href="classdte_1_1_state.html" title="Interface that specifies a state in the game.">State</a> class. It deals with changing, managing, and using states so you don't have to. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aeac92535200da7cd9e02a6f12f76f509"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dte::StateManager::StateManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The default constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a82a066bd11a6505e4ab987f9b0c9443f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dte::StateManager::StateManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdte_1_1_state.html">State</a> *&#160;</td>
+          <td class="paramname"><em>first_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The main constructor. </p>
+<p>This constructor initializes the state machine with the first state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first_state</td><td>The state to start the game engine with. It should be dynamically allocated by the programmed before being passed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a67053c9ff3ad33446d795c90e78758ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dte::StateManager::~StateManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a632c421d6b582b10226250f6d75fc997"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dte::StateManager::HandleEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa18238248da85149ceda1f41732133f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dte::StateManager::Logic </td>
+          <td>(</td>
+          <td class="paramtype">sf::Time &amp;&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7daef1196efcac9fa0240dc2451d8f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dte::StateManager::Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade5f19286c1ceefc32d58dd1a69b59e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dte::StateManager::SwitchState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_state_manager_8hpp_source.html">StateManager.hpp</a></li>
-<li>StateManager.cpp</li>
+<li><a class="el" href="_state_manager_8cpp.html">StateManager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 8 2013 23:52:38 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 12 2013 15:42:22 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
