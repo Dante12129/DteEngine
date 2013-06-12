@@ -1,0 +1,38 @@
+EXPORTS
+    _ZN3dte12StateManager11SwitchStateEv @1
+    _ZN3dte12StateManager12HandleEventsEv @2
+    _ZN3dte12StateManager5LogicERN2sf4TimeE @3
+    _ZN3dte12StateManager6RenderEv @4
+    _ZN3dte12StateManagerC1EPNS_5StateE @5
+    _ZN3dte12StateManagerC1Ev @6
+    _ZN3dte12StateManagerC2EPNS_5StateE @7
+    _ZN3dte12StateManagerC2Ev @8
+    _ZN3dte12StateManagerD1Ev @9
+    _ZN3dte12StateManagerD2Ev @10
+    _ZN3dte5StateD0Ev @11
+    _ZN3dte5StateD1Ev @12
+    _ZN3dte5StateD2Ev @13
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE3getEv @14
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEcvbEv @15
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEptEv @16
+    _ZNKSt14default_deleteIN3dte5StateEEclEPS1_ @17
+    _ZNSt10_Head_baseILj0EPN3dte5StateELb0EE7_M_headERKS3_ @18
+    _ZNSt10_Head_baseILj0EPN3dte5StateELb0EE7_M_headERS3_ @19
+    _ZNSt10_Head_baseILj1ESt14default_deleteIN3dte5StateEELb1EE7_M_headERS4_ @20
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE11get_deleterEv @21
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE5resetEPS1_ @22
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EED1Ev @23
+    _ZNSt11_Tuple_implILj0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERKS5_ @24
+    _ZNSt11_Tuple_implILj0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERS5_ @25
+    _ZNSt11_Tuple_implILj1EISt14default_deleteIN3dte5StateEEEE7_M_headERS4_ @26
+    _ZSt12__get_helperILj0EPN3dte5StateEISt14default_deleteIS1_EEENSt11__add_c_refIT0_E4typeERKSt11_Tuple_implIXT_EIS6_DpT1_EE @27
+    _ZSt12__get_helperILj0EPN3dte5StateEISt14default_deleteIS1_EEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS6_DpT1_EE @28
+    _ZSt12__get_helperILj1ESt14default_deleteIN3dte5StateEEIEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS5_DpT1_EE @29
+    _ZSt3getILj0EIPN3dte5StateESt14default_deleteIS1_EEENSt11__add_c_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERKSA_ @30
+    _ZSt3getILj0EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @31
+    _ZSt3getILj1EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @32
+    _ZSt4moveIRPN3dte5StateEEONSt16remove_referenceIT_E4typeEOS5_ @33
+    _ZSt4swapIPN3dte5StateEEvRT_S4_ @34
+    _ZTIN3dte5StateE @35 DATA
+    _ZTSN3dte5StateE @36 DATA
+    _ZTVN3dte5StateE @37 DATA

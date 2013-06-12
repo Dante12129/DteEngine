@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1370750085 source:c:\users\main\documents\programs\dteengine\src\statemanager.cpp
+	"Include/StateManager.hpp"
+
+1370717406 c:\users\main\documents\programs\dteengine\include\statemanager.hpp
+	<memory>
+	"Include/State.hpp"
+
+1370749400 c:\users\main\documents\programs\dteengine\include\state.hpp
+
+1370394560 source:c:\users\main\documents\programs\dteengine\src\state.cpp
+	"Include/State.hpp"
+

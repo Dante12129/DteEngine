@@ -1,0 +1,17 @@
+EXPORTS
+    _ZN3dte12StateManager11SwitchStateEv @1
+    _ZN3dte12StateManager12HandleEventsEv @2
+    _ZN3dte12StateManager5LogicERN2sf4TimeE @3
+    _ZN3dte12StateManager6RenderEv @4
+    _ZN3dte12StateManagerC1EPNS_5StateE @5
+    _ZN3dte12StateManagerC1Ev @6
+    _ZN3dte12StateManagerC2EPNS_5StateE @7
+    _ZN3dte12StateManagerC2Ev @8
+    _ZN3dte12StateManagerD1Ev @9
+    _ZN3dte12StateManagerD2Ev @10
+    _ZN3dte5StateD0Ev @11
+    _ZN3dte5StateD1Ev @12
+    _ZN3dte5StateD2Ev @13
+    _ZTIN3dte5StateE @14 DATA
+    _ZTSN3dte5StateE @15 DATA
+    _ZTVN3dte5StateE @16 DATA
