@@ -1,2 +1,6 @@
 warning: source ..\Include\StateManager.hpp is not a readable file or directory... skipping.
 warning: source ..\Include\State.hpp is not a readable file or directory... skipping.
+C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:43: warning: argument 'sf' of command @param is not found in the argument list of dte::StateManager::Logic(sf::Time &delta)
+C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:43: warning: argument 'Time' of command @param is not found in the argument list of dte::StateManager::Logic(sf::Time &delta)
+C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:43: warning: The following parameters of dte::StateManager::Logic(sf::Time &delta) are not documented:
+  parameter 'delta'

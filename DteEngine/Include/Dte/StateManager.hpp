@@ -29,12 +29,40 @@ namespace dte
              * \param first_state The state to start the game engine with. It should be dynamically allocated by the programmed before being passed.
              */
             StateManager(State* first_state);
+            /** \brief The default destructor.
+             */
             ~StateManager();
 
+            /** \brief Method to handle events for the current state.
+             *
+             * This method calls the current state's event handler.
+             *
+             * \return void
+             */
             void HandleEvents();
-            void Logic(sf::Time&);
+            /** \brief Method to do logic and other calculations for the current state.
+             *
+             * This method calls the current state's logic handler.
+             *
+             * \param sf::Time& delta The time passed since the start of the current frame.
+             * \return void
+             *
+             */
+            void Logic(sf::Time& delta);
+            /** \brief Method to render the screen.
+             *
+             * This method calls the current state's renderer.
+             *
+             * \return void
+             */
             void Render();
 
+            /** \brief Switches states.
+             *
+             * First, this method checks to see if the state needs change. If it does, it will change the state.
+             *
+             * \return void
+             */
             void SwitchState();
 
         private:

@@ -58,7 +58,7 @@ namespace dte
              *
              * StateManager uses this to change to the next state.
              *
-             * \return A pointer to the next state to be activated.
+             * \return A pointer to the next state to be activated. This pointer should be dynamically allocated.
              */
             virtual State* GetNextState() = 0;
     };

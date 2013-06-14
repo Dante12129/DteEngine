@@ -109,14 +109,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a82a066bd11a6505e4ab987f9b0c9443f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main constructor.  <a href="#a82a066bd11a6505e4ab987f9b0c9443f">More...</a><br/></td></tr>
 <tr class="separator:a82a066bd11a6505e4ab987f9b0c9443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67053c9ff3ad33446d795c90e78758ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a67053c9ff3ad33446d795c90e78758ba">~StateManager</a> ()</td></tr>
+<tr class="memdesc:a67053c9ff3ad33446d795c90e78758ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default destructor.  <a href="#a67053c9ff3ad33446d795c90e78758ba">More...</a><br/></td></tr>
 <tr class="separator:a67053c9ff3ad33446d795c90e78758ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c421d6b582b10226250f6d75fc997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a632c421d6b582b10226250f6d75fc997">HandleEvents</a> ()</td></tr>
+<tr class="memdesc:a632c421d6b582b10226250f6d75fc997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to handle events for the current state.  <a href="#a632c421d6b582b10226250f6d75fc997">More...</a><br/></td></tr>
 <tr class="separator:a632c421d6b582b10226250f6d75fc997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18238248da85149ceda1f41732133f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#aa18238248da85149ceda1f41732133f4">Logic</a> (sf::Time &amp;)</td></tr>
-<tr class="separator:aa18238248da85149ceda1f41732133f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591199aa2e6de97fd816f1d8380a2526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a591199aa2e6de97fd816f1d8380a2526">Logic</a> (sf::Time &amp;delta)</td></tr>
+<tr class="memdesc:a591199aa2e6de97fd816f1d8380a2526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to do logic and other calculations for the current state.  <a href="#a591199aa2e6de97fd816f1d8380a2526">More...</a><br/></td></tr>
+<tr class="separator:a591199aa2e6de97fd816f1d8380a2526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7daef1196efcac9fa0240dc2451d8f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a7daef1196efcac9fa0240dc2451d8f50">Render</a> ()</td></tr>
+<tr class="memdesc:a7daef1196efcac9fa0240dc2451d8f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to render the screen.  <a href="#a7daef1196efcac9fa0240dc2451d8f50">More...</a><br/></td></tr>
 <tr class="separator:a7daef1196efcac9fa0240dc2451d8f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#ade5f19286c1ceefc32d58dd1a69b59e9">SwitchState</a> ()</td></tr>
+<tr class="memdesc:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches states.  <a href="#ade5f19286c1ceefc32d58dd1a69b59e9">More...</a><br/></td></tr>
 <tr class="separator:ade5f19286c1ceefc32d58dd1a69b59e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -194,6 +199,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The default destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -210,9 +217,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method to handle events for the current state. </p>
+<p>This method calls the current state's event handler.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="aa18238248da85149ceda1f41732133f4"></a>
+<a class="anchor" id="a591199aa2e6de97fd816f1d8380a2526"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -225,6 +236,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to do logic and other calculations for the current state. </p>
+<p>This method calls the current state's logic handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sf::Time&amp;</td><td>delta The time passed since the start of the current frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 </div>
 </div>
@@ -241,6 +262,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method to render the screen. </p>
+<p>This method calls the current state's renderer.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ade5f19286c1ceefc32d58dd1a69b59e9"></a>
@@ -256,6 +281,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Switches states. </p>
+<p>First, this method checks to see if the state needs change. If it does, it will change the state.</p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -265,7 +294,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 12 2013 15:42:22 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 13 2013 22:10:20 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
