@@ -21,6 +21,8 @@
 				</Compiler>
 				<Linker>
 					<Add library="user32" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-system-d" />
 				</Linker>
 			</Target>
 			<Target title="DynamicLibraryRel">
@@ -32,13 +34,15 @@
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
 				<Compiler>
+					<Add option="-O2" />
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
-					<Add option="-O2" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="user32" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-system" />
 				</Linker>
 			</Target>
 		</Build>
@@ -60,14 +64,17 @@
 			<Add directory="C:/SFML-2.0/lib" />
 			<Add directory="C:/SFML-2.0/Thor/lib" />
 		</Linker>
+		<Unit filename="Include/Dte/DteEngine.hpp" />
 		<Unit filename="Include/Dte/MultiArray.hpp" />
 		<Unit filename="Include/Dte/State.hpp" />
 		<Unit filename="Include/Dte/StateManager.hpp" />
+		<Unit filename="Include/Dte/StringAlign.hpp" />
 		<Unit filename="modules.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="src/State.cpp" />
 		<Unit filename="src/StateManager.cpp" />
+		<Unit filename="src/StringAlign.cpp" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
@@ -82,7 +89,7 @@
 			</AutoVersioning>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
-				<doxyfile_project project_number="0.0.7" use_auto_version="1" />
+				<doxyfile_project project_number="0.0.8" use_auto_version="1" />
 				<doxyfile_build extract_all="1" />
 				<doxyfile_warnings />
 				<doxyfile_output />

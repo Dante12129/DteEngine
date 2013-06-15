@@ -33,6 +33,14 @@ namespace dte
              */
             ~StateManager();
 
+            /** \brief Method to initalize the manager after construction.
+             *
+             * \param state State* The state to initialize the manager with.
+             * \return bool Whether the initialization fails or not.
+             *
+             */
+            bool initialize(State* first_state);
+
             /** \brief Method to handle events for the current state.
              *
              * This method calls the current state's event handler.

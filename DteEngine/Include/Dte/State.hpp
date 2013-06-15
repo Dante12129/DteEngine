@@ -30,7 +30,7 @@ namespace dte
              *
              * It is recommended that you handle the close event here.
              *
-             * \return Nothing
+             * \return void
              */
             virtual void HandleEvents() = 0;
             /** \brief Handle logic for the state.
@@ -38,14 +38,14 @@ namespace dte
              * This is where you do all your main calculations and etc.
              *
              * \param delta The current delta for the frame.
-             * \return Nothing
+             * \return void
              */
             virtual void Logic(sf::Time& delta) = 0;
             /** \brief Render all things to the target that need to be rendered.
              *
              * This is where you render all your drawables to the target.
              *
-             * \return Nothing
+             * \return void
              */
             virtual void Render() = 0;
 
