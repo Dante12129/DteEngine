@@ -18,11 +18,13 @@
 					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add option="-DBUILD_DLL" />
+					<Add option="-DDEBUGBUILD" />
 				</Compiler>
 				<Linker>
 					<Add library="user32" />
 					<Add library="sfml-graphics-d" />
 					<Add library="sfml-system-d" />
+					<Add library="sfml-window-d" />
 				</Linker>
 			</Target>
 			<Target title="DynamicLibraryRel">
@@ -37,11 +39,13 @@
 					<Add option="-O2" />
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
+					<Add option="-DRELEASEBUILD" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="user32" />
 					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
 					<Add library="sfml-system" />
 				</Linker>
 			</Target>
@@ -51,8 +55,8 @@
 		</VirtualTargets>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="C:/SFML-2.0/include" />
-			<Add directory="C:/SFML-2.0/Thor/include" />
+			<Add directory="C:/SFML-2.1/include" />
+			<Add directory="C:/SFML-2.1/Thor/include" />
 			<Add directory="Include" />
 		</Compiler>
 		<Linker>
@@ -61,20 +65,31 @@
 			<Add library="gdi32" />
 			<Add library="winmm" />
 			<Add library="dxguid" />
-			<Add directory="C:/SFML-2.0/lib" />
-			<Add directory="C:/SFML-2.0/Thor/lib" />
+			<Add library="C:\luabind-0.9.1\bin\gcc-mingw-4.8.1\debug\libluabindd.dll" />
+			<Add directory="C:/SFML-2.1/lib" />
+			<Add directory="C:/SFML-2.1/Thor/lib" />
 		</Linker>
+		<Unit filename="Include/Dte/Align.hpp" />
 		<Unit filename="Include/Dte/DteEngine.hpp" />
+		<Unit filename="Include/Dte/Line.hpp" />
+		<Unit filename="Include/Dte/Logger.hpp" />
+		<Unit filename="Include/Dte/LuaState.hpp" />
 		<Unit filename="Include/Dte/MultiArray.hpp" />
+		<Unit filename="Include/Dte/Spritesheet.hpp" />
 		<Unit filename="Include/Dte/State.hpp" />
 		<Unit filename="Include/Dte/StateManager.hpp" />
-		<Unit filename="Include/Dte/StringAlign.hpp" />
+		<Unit filename="Include/Dte/Utilities.hpp" />
 		<Unit filename="modules.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="src/Align.cpp" />
+		<Unit filename="src/Line.cpp" />
+		<Unit filename="src/Logger.cpp" />
+		<Unit filename="src/LuaState.cpp" />
+		<Unit filename="src/Spritesheet.cpp" />
 		<Unit filename="src/State.cpp" />
 		<Unit filename="src/StateManager.cpp" />
-		<Unit filename="src/StringAlign.cpp" />
+		<Unit filename="src/Utilities.cpp" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
@@ -83,13 +98,13 @@
 			<lib_finder disable_auto="1" />
 			<AutoVersioning>
 				<Scheme minor_max="20" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
-				<Settings autoincrement="1" date_declarations="1" update_manifest="0" do_auto_increment="1" ask_to_increment="1" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="0" do_auto_increment="1" ask_to_increment="1" language="C++" svn="0" svn_directory="" header_path="version.h" />
 				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
 				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
 			</AutoVersioning>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
-				<doxyfile_project project_number="0.0.8" use_auto_version="1" />
+				<doxyfile_project project_number="0.0.14" use_auto_version="1" />
 				<doxyfile_build extract_all="1" />
 				<doxyfile_warnings />
 				<doxyfile_output />

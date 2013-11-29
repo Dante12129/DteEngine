@@ -1,10 +1,8 @@
 #ifndef STATEMANAGER_HPP_INCLUDED
 #define STATEMANAGER_HPP_INCLUDED
 
-#include <memory>
+#include <stack>
 #include "Dte/State.hpp"
-
-namespace sf { class RenderWindow; }
 
 namespace dte
 {
@@ -26,55 +24,24 @@ namespace dte
              *
              * This constructor initializes the state machine with the first state.
              *
-             * \param first_state The state to start the game engine with. It should be dynamically allocated by the programmed before being passed.
+             * \param first_state The state to start the game engine with. It will not be valid after being moved into the manager.
              */
-            StateManager(State* first_state);
+            StateManager(std::unique_ptr<State> first);
             /** \brief The default destructor.
              */
             ~StateManager();
 
-            /** \brief Method to initalize the manager after construction.
-             *
-             * \param state State* The state to initialize the manager with.
-             * \return bool Whether the initialization fails or not.
-             *
-             */
-            bool initialize(State* first_state);
-
-            /** \brief Method to handle events for the current state.
-             *
-             * This method calls the current state's event handler.
-             *
-             * \return void
-             */
-            void HandleEvents();
-            /** \brief Method to do logic and other calculations for the current state.
-             *
-             * This method calls the current state's logic handler.
-             *
-             * \param sf::Time& delta The time passed since the start of the current frame.
-             * \return void
-             *
-             */
-            void Logic(sf::Time& delta);
-            /** \brief Method to render the screen.
-             *
-             * This method calls the current state's renderer.
-             *
-             * \return void
-             */
+            void HandleEvents(sf::Event& event);
+            void Logic(sf::Time& dt);
             void Render();
 
-            /** \brief Switches states.
-             *
-             * First, this method checks to see if the state needs change. If it does, it will change the state.
-             *
-             * \return void
-             */
-            void SwitchState();
+            std::pair<bool, StateChangeType> GetCurrentStatus();
+
+            void NextState();
+            void PrevState();
 
         private:
-            std::unique_ptr<State> current_state;
+            std::stack<std::unique_ptr<State>> m_state_stack;
     };
     /** \} */
 }

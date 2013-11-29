@@ -1,41 +1,750 @@
 EXPORTS
-    _ZN3dte12StateManager10initializeEPNS_5StateE @1
-    _ZN3dte12StateManager11SwitchStateEv @2
-    _ZN3dte12StateManager12HandleEventsEv @3
-    _ZN3dte12StateManager5LogicERN2sf4TimeE @4
-    _ZN3dte12StateManager6RenderEv @5
-    _ZN3dte12StateManagerC1EPNS_5StateE @6
-    _ZN3dte12StateManagerC1Ev @7
-    _ZN3dte12StateManagerC2EPNS_5StateE @8
-    _ZN3dte12StateManagerC2Ev @9
-    _ZN3dte12StateManagerD1Ev @10
-    _ZN3dte12StateManagerD2Ev @11
-    _ZN3dte13CenterTextHorERN2sf4TextERKNS0_12RenderWindowE @12
-    _ZN3dte19getStringFromTime_TEl @13
-    _ZN3dte5StateD0Ev @14
-    _ZN3dte5StateD1Ev @15
-    _ZN3dte5StateD2Ev @16
-    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE3getEv @17
-    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEcvbEv @18
-    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEptEv @19
-    _ZNKSt14default_deleteIN3dte5StateEEclEPS1_ @20
-    _ZNSt10_Head_baseILj0EPN3dte5StateELb0EE7_M_headERKS3_ @21
-    _ZNSt10_Head_baseILj0EPN3dte5StateELb0EE7_M_headERS3_ @22
-    _ZNSt10_Head_baseILj1ESt14default_deleteIN3dte5StateEELb1EE7_M_headERS4_ @23
-    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE11get_deleterEv @24
-    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE5resetEPS1_ @25
-    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EED1Ev @26
-    _ZNSt11_Tuple_implILj0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERKS5_ @27
-    _ZNSt11_Tuple_implILj0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERS5_ @28
-    _ZNSt11_Tuple_implILj1EISt14default_deleteIN3dte5StateEEEE7_M_headERS4_ @29
-    _ZSt12__get_helperILj0EPN3dte5StateEISt14default_deleteIS1_EEENSt11__add_c_refIT0_E4typeERKSt11_Tuple_implIXT_EIS6_DpT1_EE @30
-    _ZSt12__get_helperILj0EPN3dte5StateEISt14default_deleteIS1_EEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS6_DpT1_EE @31
-    _ZSt12__get_helperILj1ESt14default_deleteIN3dte5StateEEIEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS5_DpT1_EE @32
-    _ZSt3getILj0EIPN3dte5StateESt14default_deleteIS1_EEENSt11__add_c_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERKSA_ @33
-    _ZSt3getILj0EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @34
-    _ZSt3getILj1EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @35
-    _ZSt4moveIRPN3dte5StateEEONSt16remove_referenceIT_E4typeEOS5_ @36
-    _ZSt4swapIPN3dte5StateEEvRT_S4_ @37
-    _ZTIN3dte5StateE @38 DATA
-    _ZTSN3dte5StateE @39 DATA
-    _ZTVN3dte5StateE @40 DATA
+    _ZN2sf11NonCopyableC2Ev @1
+    _ZN2sf14RectangleShapeD1Ev @2
+    _ZN2sf4RectIiEC1Eiiii @3
+    _ZN2sf4RectIiEC1Ev @4
+    _ZN2sf7Vector2IfEC1Eff @5
+    _ZN2sf7Vector2IfEC1Ev @6
+    _ZN2sf7Vector2IfEC1IjEERKNS0_IT_EE @7
+    _ZN2sf7Vector2IjEC1Ejj @8
+    _ZN2sf7Vector2IjEC1Ev @9
+    _ZN2sf8DrawableC2Ev @10
+    _ZN2sf8DrawableD0Ev @11
+    _ZN2sf8DrawableD1Ev @12
+    _ZN2sf8DrawableD2Ev @13
+    _ZN2sfdvIjEENS_7Vector2IT_EERKS3_S2_ @14
+    _ZN2sfmiIfEENS_7Vector2IT_EERKS3_S5_ @15
+    _ZN3dte10CenterTextERN2sf4TextERKNS0_12RenderTargetE @16
+    _ZN3dte10MultiArrayIN2sf4RectIiEEE9push_backERKS3_ @17
+    _ZN3dte10MultiArrayIN2sf4RectIiEEEC1Ev @18
+    _ZN3dte10MultiArrayIN2sf4RectIiEEED1Ev @19
+    _ZN3dte11SpritesheetC1ESsN2sf7Vector2IjEES3_ @20
+    _ZN3dte11SpritesheetC1Ev @21
+    _ZN3dte11SpritesheetC2ESsN2sf7Vector2IjEES3_ @22
+    _ZN3dte11SpritesheetC2Ev @23
+    _ZN3dte11SpritesheetD1Ev @24
+    _ZN3dte11SpritesheetD2Ev @25
+    _ZN3dte12CenterSpriteERN2sf6SpriteERKNS0_12RenderTargetE @26
+    _ZN3dte12StateManager12HandleEventsERN2sf5EventE @27
+    _ZN3dte12StateManager16GetCurrentStatusEv @28
+    _ZN3dte12StateManager5LogicERN2sf4TimeE @29
+    _ZN3dte12StateManager6RenderEv @30
+    _ZN3dte12StateManager9NextStateEv @31
+    _ZN3dte12StateManager9PrevStateEv @32
+    _ZN3dte12StateManagerC1ESt10unique_ptrINS_5StateESt14default_deleteIS2_EE @33
+    _ZN3dte12StateManagerC1Ev @34
+    _ZN3dte12StateManagerC2ESt10unique_ptrINS_5StateESt14default_deleteIS2_EE @35
+    _ZN3dte12StateManagerC2Ev @36
+    _ZN3dte12StateManagerD1Ev @37
+    _ZN3dte12StateManagerD2Ev @38
+    _ZN3dte13CenterTextHorERN2sf4TextERKNS0_12RenderTargetE @39
+    _ZN3dte14CenterTextVertERN2sf4TextERKNS0_12RenderTargetE @40
+    _ZN3dte14MaximizeWindowERKN2sf12RenderWindowE @41
+    _ZN3dte14MinimizeWindowERKN2sf12RenderWindowE @42
+    _ZN3dte15CenterSpriteHorERN2sf6SpriteERKNS0_12RenderTargetE @43
+    _ZN3dte16CenterSpriteVertERN2sf6SpriteERKNS0_12RenderTargetE @44
+    _ZN3dte19GetStringFromTime_TEx @45
+    _ZN3dte4LineC1EN2sf7Vector2IfEES3_NS1_5ColorE @46
+    _ZN3dte4LineC1ESt4pairIN2sf7Vector2IfEES4_ENS2_5ColorE @47
+    _ZN3dte4LineC1Ev @48
+    _ZN3dte4LineC2EN2sf7Vector2IfEES3_NS1_5ColorE @49
+    _ZN3dte4LineC2ESt4pairIN2sf7Vector2IfEES4_ENS2_5ColorE @50
+    _ZN3dte4LineC2Ev @51
+    _ZN3dte4LineD0Ev @52
+    _ZN3dte4LineD1Ev @53
+    _ZN3dte4LineD2Ev @54
+    _ZN3dte5StateD0Ev @55
+    _ZN3dte5StateD1Ev @56
+    _ZN3dte5StateD2Ev @57
+    _ZN3dte6Logger10WriteErrorERKSs @58
+    _ZN3dte6Logger11GetInstanceEv @59
+    _ZN3dte6Logger12LogTimeErrorEv @60
+    _ZN3dte6Logger12WriteErrorLnERKSs @61
+    _ZN3dte6Logger13WriteStandardERKSs @62
+    _ZN3dte6Logger15LogTimeStandardEv @63
+    _ZN3dte6Logger15WriteStandardLnERKSs @64
+    _ZN3dte6Logger4OpenERKSsS2_ @65
+    _ZN3dte6LoggerC1Ev @66
+    _ZN3dte6LoggerC2Ev @67
+    _ZN3dte6LoggerD1Ev @68
+    _ZN3dte6LoggerD2Ev @69
+    _ZN3dte7GetTimeEv @70
+    _ZN3dte8LuaState6doFileERKSs @71
+    _ZN3dte8LuaState8doStringERKSs @72
+    _ZN3dte8LuaStateC1Ev @73
+    _ZN3dte8LuaStateC2Ev @74
+    _ZN3dte8LuaStateD1Ev @75
+    _ZN3dte8LuaStateD2Ev @76
+    _ZN5boost3argILi0EEC1Ev @77
+    _ZN5boost3argILi1EEC1Ev @78
+    _ZN5boost3argILi2EEC1Ev @79
+    _ZN5boost3argILi3EEC1Ev @80
+    _ZN5boost3argILi4EEC1Ev @81
+    _ZN5boost3argILi5EEC1Ev @82
+    _ZN5boost3argILi6EEC1Ev @83
+    _ZN5boost3argILi7EEC1Ev @84
+    _ZN5boost3argILi8EEC1Ev @85
+    _ZN5boost3argILi9EEC1Ev @86
+    _ZN7luabind12value_vectorD0Ev @87
+    _ZN7luabind12value_vectorD1Ev @88
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEE10deallocateEPS3_y @89
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEE7destroyIS3_EEvPT_ @90
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEE8allocateEyPKv @91
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEE9constructIS3_IRKS3_EEEvPT_DpOT0_ @92
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEEC2Ev @93
+    _ZN9__gnu_cxx13new_allocatorIN2sf4RectIiEEED2Ev @94
+    _ZN9__gnu_cxx13new_allocatorIN7luabind5valueEE10deallocateEPS2_y @95
+    _ZN9__gnu_cxx13new_allocatorIN7luabind5valueEED2Ev @96
+    _ZN9__gnu_cxx13new_allocatorIPSt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE10deallocateEPS7_y @97
+    _ZN9__gnu_cxx13new_allocatorIPSt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE8allocateEyPKv @98
+    _ZN9__gnu_cxx13new_allocatorIPSt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEEC2Ev @99
+    _ZN9__gnu_cxx13new_allocatorIPSt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEED2Ev @100
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE10deallocateEPS6_y @101
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE7destroyIS6_EEvPT_ @102
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE8allocateEyPKv @103
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE9constructIS6_IS6_EEEvPT_DpOT0_ @104
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEEC2ERKS7_ @105
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEEC2Ev @106
+    _ZN9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEED2Ev @107
+    _ZNK3dte10MultiArrayIN2sf4RectIiEEEclEj @108
+    _ZNK3dte11Spritesheet10GetTextureEv @109
+    _ZNK3dte11Spritesheet18GetImageDimensionsEv @110
+    _ZNK3dte11Spritesheet19GetSpriteDimensionsEv @111
+    _ZNK3dte11Spritesheet7GetRectEj @112
+    _ZNK3dte11Spritesheet7GetRectEjj @113
+    _ZNK3dte11Spritesheet9GetPerColEv @114
+    _ZNK3dte11Spritesheet9GetPerRowEv @115
+    _ZNK3dte4Line4drawERN2sf12RenderTargetENS1_12RenderStatesE @116
+    _ZNK3dte8LuaStatecvP9lua_StateEv @117
+    _ZNK9__gnu_cxx13new_allocatorIN2sf4RectIiEEE8max_sizeEv @118
+    _ZNK9__gnu_cxx13new_allocatorIPSt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE8max_sizeEv @119
+    _ZNK9__gnu_cxx13new_allocatorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EEE8max_sizeEv @120
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE3getEv @121
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEcvbEv @122
+    _ZNKSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEptEv @123
+    _ZNKSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE19_M_get_Tp_allocatorEv @124
+    _ZNKSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE20_M_get_map_allocatorEv @125
+    _ZNKSt12_Vector_baseIN2sf4RectIiEESaIS2_EE19_M_get_Tp_allocatorEv @126
+    _ZNKSt13move_iteratorIPN2sf4RectIiEEE4baseEv @127
+    _ZNKSt13move_iteratorIPN2sf4RectIiEEEdeEv @128
+    _ZNKSt14default_deleteIN3dte5StateEEclEPS1_ @129
+    _ZNKSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_EdeEv @130
+    _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIxSt5ratioILx1ELx1000000000EEEEE16time_since_epochEv @131
+    _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv @132
+    _ZNKSt6chrono8durationIxSt5ratioILx1ELx1EEE5countEv @133
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EE12_M_check_lenEyPKc @134
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EE14_M_range_checkEy @135
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EE2atEy @136
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EE4sizeEv @137
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EE8max_sizeEv @138
+    _ZNKSt6vectorIN2sf4RectIiEESaIS2_EEixEy @139
+    _ZNSaIN2sf4RectIiEEEC2Ev @140
+    _ZNSaIN2sf4RectIiEEED2Ev @141
+    _ZNSaIN7luabind5valueEED2Ev @142
+    _ZNSaIPSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEEC1IS4_EERKSaIT_E @143
+    _ZNSaIPSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEED1Ev @144
+    _ZNSaISt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEEC2ERKS5_ @145
+    _ZNSaISt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEEC2Ev @146
+    _ZNSaISt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEED2Ev @147
+    _ZNSt10_Head_baseILy0EPN3dte5StateELb0EE7_M_headERKS3_ @148
+    _ZNSt10_Head_baseILy0EPN3dte5StateELb0EE7_M_headERS3_ @149
+    _ZNSt10_Head_baseILy0EPN3dte5StateELb0EEC2IS2_vEEOT_ @150
+    _ZNSt10_Head_baseILy1ESt14default_deleteIN3dte5StateEELb1EE7_M_headERS4_ @151
+    _ZNSt10_Head_baseILy1ESt14default_deleteIN3dte5StateEELb1EEC2IS3_vEEOT_ @152
+    _ZNSt10_Iter_baseIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EELb0EE7_S_baseES7_ @153
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE11get_deleterEv @154
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EE7releaseEv @155
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EEC1EOS4_ @156
+    _ZNSt10unique_ptrIN3dte5StateESt14default_deleteIS1_EED1Ev @157
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE11_Deque_implC1EOS6_ @158
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE11_Deque_implC1Ev @159
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE11_Deque_implD1Ev @160
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE15_M_allocate_mapEy @161
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE15_M_create_nodesEPPS5_S9_ @162
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE16_M_allocate_nodeEv @163
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE16_M_destroy_nodesEPPS5_S9_ @164
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE17_M_deallocate_mapEPPS5_y @165
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE17_M_initialize_mapEy @166
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE18_M_deallocate_nodeEPS5_ @167
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE19_M_get_Tp_allocatorEv @168
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EEC2EOS7_ @169
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EEC2Ev @170
+    _ZNSt11_Deque_baseISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EED2Ev @171
+    _ZNSt11_Tuple_implILy0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERKS5_ @172
+    _ZNSt11_Tuple_implILy0EIPN3dte5StateESt14default_deleteIS1_EEE7_M_headERS5_ @173
+    _ZNSt11_Tuple_implILy0EIPN3dte5StateESt14default_deleteIS1_EEEC2IS2_IS4_EvEEOT_DpOT0_ @174
+    _ZNSt11_Tuple_implILy1EISt14default_deleteIN3dte5StateEEEE7_M_headERS4_ @175
+    _ZNSt11_Tuple_implILy1EISt14default_deleteIN3dte5StateEEEEC2IS3_IEvEEOT_DpOT0_ @176
+    _ZNSt11_Tuple_implILy2EIEEC2Ev @177
+    _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIPSt10unique_ptrIN3dte5StateESt14default_deleteIS5_EEEEPT_PKSA_SD_SB_ @178
+    _ZNSt12_Destroy_auxILb0EE9__destroyIPSt10unique_ptrIN3dte5StateESt14default_deleteIS4_EEEEvT_S9_ @179
+    _ZNSt12_Destroy_auxILb1EE9__destroyIPN2sf4RectIiEEEEvT_S6_ @180
+    _ZNSt12_Destroy_auxILb1EE9__destroyIPN7luabind5valueEEEvT_S5_ @181
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EE11_M_allocateEy @182
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EE12_Vector_implC1Ev @183
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EE12_Vector_implD1Ev @184
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EE13_M_deallocateEPS2_y @185
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EE19_M_get_Tp_allocatorEv @186
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EEC2Ev @187
+    _ZNSt12_Vector_baseIN2sf4RectIiEESaIS2_EED2Ev @188
+    _ZNSt12_Vector_baseIN7luabind5valueESaIS1_EE12_Vector_implD1Ev @189
+    _ZNSt12_Vector_baseIN7luabind5valueESaIS1_EE13_M_deallocateEPS1_y @190
+    _ZNSt12_Vector_baseIN7luabind5valueESaIS1_EE19_M_get_Tp_allocatorEv @191
+    _ZNSt12_Vector_baseIN7luabind5valueESaIS1_EED2Ev @192
+    _ZNSt13move_iteratorIPN2sf4RectIiEEEC1ES3_ @193
+    _ZNSt13move_iteratorIPN2sf4RectIiEEEppEv @194
+    _ZNSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_E11_M_set_nodeEPS7_ @195
+    _ZNSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_E14_S_buffer_sizeEv @196
+    _ZNSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_EC1ERKS8_ @197
+    _ZNSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_EC1Ev @198
+    _ZNSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EERS5_PS5_EmmEv @199
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE10_S_destroyIS2_EENSt9enable_ifIXsrNS4_16__destroy_helperIT_EE5valueEvE4typeERS3_PS8_ @200
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE11_S_max_sizeIKS3_EENSt9enable_ifIXsrNS4_16__maxsize_helperIT_EE5valueEyE4typeERS9_ @201
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE12_S_constructIS2_IRKS2_EEENSt9enable_ifIXsrNS4_18__construct_helperIT_IDpT0_EEE5valueEvE4typeERS3_PSA_DpOSB_ @202
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE7destroyIS2_EEvRS3_PT_ @203
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE8max_sizeERKS3_ @204
+    _ZNSt16allocator_traitsISaIN2sf4RectIiEEEE9constructIS2_IRKS2_EEEDTcl12_S_constructfp_fp0_spcl7forwardIT0_Efp1_EEERS3_PT_DpOS8_ @205
+    _ZNSt20__copy_move_backwardILb0ELb1ESt26random_access_iterator_tagE13__copy_move_bIPSt10unique_ptrIN3dte5StateESt14default_deleteIS5_EEEEPT_PKSA_SD_SB_ @206
+    _ZNSt20__uninitialized_copyILb0EE13__uninit_copyISt13move_iteratorIPN2sf4RectIiEEES6_EET0_T_S9_S8_ @207
+    _ZNSt4pairIN2sf7Vector2IfEES2_EC1Ev @208
+    _ZNSt4pairIN2sf7Vector2IfEES2_EC1IRS2_S5_vEEOT_OT0_ @209
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE12emplace_backIIS5_EEEvDpOT_ @210
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE14_S_buffer_sizeEv @211
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE15_M_destroy_dataESt15_Deque_iteratorIS5_RS5_PS5_ESB_RKS6_ @212
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE15_M_pop_back_auxEv @213
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE16_M_push_back_auxIIS5_EEEvDpOT_ @214
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE17_M_reallocate_mapEyb @215
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE19_M_destroy_data_auxESt15_Deque_iteratorIS5_RS5_PS5_ESB_ @216
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE22_M_reserve_map_at_backEy @217
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE3endEv @218
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE4backEv @219
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE5beginEv @220
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE8pop_backEv @221
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EE9push_backEOS5_ @222
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EEC1EOS7_ @223
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EEC1Ev @224
+    _ZNSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESaIS5_EED1Ev @225
+    _ZNSt5stackISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESt5dequeIS5_SaIS5_EEE3popEv @226
+    _ZNSt5stackISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESt5dequeIS5_SaIS5_EEE3topEv @227
+    _ZNSt5stackISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESt5dequeIS5_SaIS5_EEE4pushEOS5_ @228
+    _ZNSt5stackISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESt5dequeIS5_SaIS5_EEEC1EOS8_ @229
+    _ZNSt5stackISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EESt5dequeIS5_SaIS5_EEED1Ev @230
+    _ZNSt5tupleIIPN3dte5StateESt14default_deleteIS1_EEEC1IS2_S4_vEEOT_OT0_ @231
+    _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1EEEExS2_ILx1ELx1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE @232
+    _ZNSt6chrono20__duration_cast_implINS_8durationIxSt5ratioILx1ELx1EEEES2_ILx1ELx1000000000EExLb1ELb0EE6__castIxS5_EES4_RKNS1_IT_T0_EE @233
+    _ZNSt6chrono3_V212system_clock9to_time_tERKNS_10time_pointIS1_NS_8durationIxSt5ratioILx1ELx1000000000EEEEEE @234
+    _ZNSt6chrono8durationIxSt5ratioILx1ELx1EEEC1IxvEERKT_ @235
+    _ZNSt6vectorIN2sf4RectIiEESaIS2_EE19_M_emplace_back_auxIIRKS2_EEEvDpOT_ @236
+    _ZNSt6vectorIN2sf4RectIiEESaIS2_EE9push_backERKS2_ @237
+    _ZNSt6vectorIN2sf4RectIiEESaIS2_EEC1Ev @238
+    _ZNSt6vectorIN2sf4RectIiEESaIS2_EED1Ev @239
+    _ZNSt6vectorIN7luabind5valueESaIS1_EED2Ev @240
+    _ZSt10_ConstructIN2sf4RectIiEEIS2_EEvPT_DpOT0_ @241
+    _ZSt11__addressofIN2sf4RectIiEEEPT_RS3_ @242
+    _ZSt11__addressofISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEPT_RS6_ @243
+    _ZSt12__get_helperILy0EPN3dte5StateEISt14default_deleteIS1_EEENSt11__add_c_refIT0_E4typeERKSt11_Tuple_implIXT_EIS6_DpT1_EE @244
+    _ZSt12__get_helperILy0EPN3dte5StateEISt14default_deleteIS1_EEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS6_DpT1_EE @245
+    _ZSt12__get_helperILy1ESt14default_deleteIN3dte5StateEEIEENSt9__add_refIT0_E4typeERSt11_Tuple_implIXT_EIS5_DpT1_EE @246
+    _ZSt12__miter_baseIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEENSt11_Miter_baseIT_E13iterator_typeES9_ @247
+    _ZSt12__niter_baseIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEENSt11_Niter_baseIT_E13iterator_typeES9_ @248
+    _ZSt13__copy_move_aILb0EPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET1_T0_S9_S8_ @249
+    _ZSt13copy_backwardIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET0_T_S9_S8_ @250
+    _ZSt14__copy_move_a2ILb0EPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET1_T0_S9_S8_ @251
+    _ZSt16__deque_buf_sizey @252
+    _ZSt18uninitialized_copyISt13move_iteratorIPN2sf4RectIiEEES4_ET0_T_S7_S6_ @253
+    _ZSt22__copy_move_backward_aILb0EPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET1_T0_S9_S8_ @254
+    _ZSt22__uninitialized_copy_aISt13move_iteratorIPN2sf4RectIiEEES4_S3_ET0_T_S7_S6_RSaIT1_E @255
+    _ZSt23__copy_move_backward_a2ILb0EPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET1_T0_S9_S8_ @256
+    _ZSt32__make_move_if_noexcept_iteratorIPN2sf4RectIiEESt13move_iteratorIS3_EET0_T_ @257
+    _ZSt34__uninitialized_move_if_noexcept_aIPN2sf4RectIiEES3_SaIS2_EET0_T_S6_S5_RT1_ @258
+    _ZSt3getILy0EIPN3dte5StateESt14default_deleteIS1_EEENSt11__add_c_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERKSA_ @259
+    _ZSt3getILy0EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @260
+    _ZSt3getILy1EIPN3dte5StateESt14default_deleteIS1_EEENSt9__add_refINSt13tuple_elementIXT_ESt5tupleIIDpT0_EEE4typeEE4typeERSA_ @261
+    _ZSt3maxIyERKT_S2_S2_ @262
+    _ZSt4copyIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES7_ET0_T_S9_S8_ @263
+    _ZSt4moveIRN2sf4RectIiEEEONSt16remove_referenceIT_E4typeEOS5_ @264
+    _ZSt4moveIRPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEONSt16remove_referenceIT_E4typeEOSA_ @265
+    _ZSt4moveIRSaISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEEONSt16remove_referenceIT_E4typeEOS9_ @266
+    _ZSt4moveIRSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEONSt16remove_referenceIT_E4typeEOS8_ @267
+    _ZSt4moveIRSt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EERS6_PS6_EEONSt16remove_referenceIT_E4typeEOSC_ @268
+    _ZSt4moveIRSt5dequeISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EESaIS6_EEEONSt16remove_referenceIT_E4typeEOSB_ @269
+    _ZSt4moveIRyEONSt16remove_referenceIT_E4typeEOS2_ @270
+    _ZSt4swapIPPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEvRT_S9_ @271
+    _ZSt4swapISt15_Deque_iteratorISt10unique_ptrIN3dte5StateESt14default_deleteIS3_EERS6_PS6_EEvRT_SB_ @272
+    _ZSt4swapIyEvRT_S1_ @273
+    _ZSt7forwardIN2sf4RectIiEEEOT_RNSt16remove_referenceIS3_E4typeE @274
+    _ZSt7forwardIPN3dte5StateEEOT_RNSt16remove_referenceIS3_E4typeE @275
+    _ZSt7forwardIRKN2sf4RectIiEEEOT_RNSt16remove_referenceIS5_E4typeE @276
+    _ZSt7forwardIRN2sf7Vector2IfEEEOT_RNSt16remove_referenceIS4_E4typeE @277
+    _ZSt7forwardISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEOT_RNSt16remove_referenceIS6_E4typeE @278
+    _ZSt7forwardISt14default_deleteIN3dte5StateEEEOT_RNSt16remove_referenceIS4_E4typeE @279
+    _ZSt8_DestroyIPN2sf4RectIiEEEvT_S4_ @280
+    _ZSt8_DestroyIPN2sf4RectIiEES2_EvT_S4_RSaIT0_E @281
+    _ZSt8_DestroyIPN7luabind5valueEEvT_S3_ @282
+    _ZSt8_DestroyIPN7luabind5valueES1_EvT_S3_RSaIT0_E @283
+    _ZSt8_DestroyIPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEvT_S7_ @284
+    _ZSt8_DestroyIPSt10unique_ptrIN3dte5StateESt14default_deleteIS2_EES5_EvT_S7_RSaIT0_E @285
+    _ZSt8_DestroyISt10unique_ptrIN3dte5StateESt14default_deleteIS2_EEEvPT_ @286
+    _ZSt9make_pairIRN2sf7Vector2IfEES3_ESt4pairINSt17__decay_and_stripIT_E6__typeENS5_IT0_E6__typeEEOS6_OS9_ @287
+    _ZSteqIPN2sf4RectIiEEEbRKSt13move_iteratorIT_ES8_ @288
+    _ZStneIPN2sf4RectIiEEEbRKSt13move_iteratorIT_ES8_ @289
+    _ZStorSt13_Ios_OpenmodeS_ @290
+    _ZTIN2sf8DrawableE @291 DATA
+    _ZTIN3dte4LineE @292 DATA
+    _ZTIN3dte5StateE @293 DATA
+    _ZTIN7luabind12value_vectorE @294 DATA
+    _ZTISt12_Vector_baseIN7luabind5valueESaIS1_EE @295 DATA
+    _ZTISt6vectorIN7luabind5valueESaIS1_EE @296 DATA
+    _ZTSN2sf8DrawableE @297 DATA
+    _ZTSN3dte4LineE @298 DATA
+    _ZTSN3dte5StateE @299 DATA
+    _ZTSN7luabind12value_vectorE @300 DATA
+    _ZTSSt12_Vector_baseIN7luabind5valueESaIS1_EE @301 DATA
+    _ZTSSt6vectorIN7luabind5valueESaIS1_EE @302 DATA
+    _ZTVN3dte4LineE @303 DATA
+    _ZTVN3dte5StateE @304 DATA
+    _ZTVN7luabind12value_vectorE @305 DATA
+    _ZThn8_N2sf14RectangleShapeD1Ev @306
+    _ZnwyPv @307
+
+IMPORTS
+
+    libluabindd.dll._ZN7luabind10namespace_C1EPKc
+    libluabindd.dll._ZN7luabind10namespace_C2EPKc
+    libluabindd.dll._ZN7luabind10namespace_ixENS_5scopeE
+    libluabindd.dll._ZN7luabind14get_class_infoERKNS_3adl8argumentE
+    libluabindd.dll._ZN7luabind14get_weak_tableEP9lua_State
+    libluabindd.dll._ZN7luabind15bind_class_infoEP9lua_State
+    libluabindd.dll._ZN7luabind15get_class_namesEP9lua_State
+    libluabindd.dll._ZN7luabind15get_main_threadEP9lua_State
+    libluabindd.dll._ZN7luabind18get_pcall_callbackEv
+    libluabindd.dll._ZN7luabind18set_pcall_callbackEPFiP9lua_StateE
+    libluabindd.dll._ZN7luabind25disable_super_deprecationEv
+    libluabindd.dll._ZN7luabind3nilE
+    libluabindd.dll._ZN7luabind4openEP9lua_State
+    libluabindd.dll._ZN7luabind5scopeC1ERKS0_
+    libluabindd.dll._ZN7luabind5scopeC1ESt8auto_ptrINS_6detail12registrationEE
+    libluabindd.dll._ZN7luabind5scopeC1Ev
+    libluabindd.dll._ZN7luabind5scopeC2ERKS0_
+    libluabindd.dll._ZN7luabind5scopeC2ESt8auto_ptrINS_6detail12registrationEE
+    libluabindd.dll._ZN7luabind5scopeC2Ev
+    libluabindd.dll._ZN7luabind5scopeD1Ev
+    libluabindd.dll._ZN7luabind5scopeD2Ev
+    libluabindd.dll._ZN7luabind5scopeaSERKS0_
+    libluabindd.dll._ZN7luabind5scopecmES0_
+    libluabindd.dll._ZN7luabind6detail10cast_graph6insertEyyPFPvS2_E
+    libluabindd.dll._ZN7luabind6detail10cast_graphC1Ev
+    libluabindd.dll._ZN7luabind6detail10cast_graphC2Ev
+    libluabindd.dll._ZN7luabind6detail10cast_graphD1Ev
+    libluabindd.dll._ZN7luabind6detail10cast_graphD2Ev
+    libluabindd.dll._ZN7luabind6detail10class_base10add_memberEPNS0_12registrationE
+    libluabindd.dll._ZN7luabind6detail10class_base15add_inner_scopeERNS_5scopeE
+    libluabindd.dll._ZN7luabind6detail10class_base18add_default_memberEPNS0_12registrationE
+    libluabindd.dll._ZN7luabind6detail10class_base19add_static_constantEPKci
+    libluabindd.dll._ZN7luabind6detail10class_base4initERKNS_7type_idEyS4_y
+    libluabindd.dll._ZN7luabind6detail10class_base8add_baseERKNS_7type_idEPFPvS5_E
+    libluabindd.dll._ZN7luabind6detail10class_base8add_castEyyPFPvS2_E
+    libluabindd.dll._ZN7luabind6detail10class_baseC1EPKc
+    libluabindd.dll._ZN7luabind6detail10class_baseC2EPKc
+    libluabindd.dll._ZN7luabind6detail10object_rep10deallocateEPv
+    libluabindd.dll._ZN7luabind6detail10object_rep12set_instanceEPNS0_15instance_holderE
+    libluabindd.dll._ZN7luabind6detail10object_rep14add_dependencyEP9lua_Statei
+    libluabindd.dll._ZN7luabind6detail10object_rep23release_dependency_refsEP9lua_State
+    libluabindd.dll._ZN7luabind6detail10object_rep4crepEv
+    libluabindd.dll._ZN7luabind6detail10object_rep8allocateEy
+    libluabindd.dll._ZN7luabind6detail10object_repC1EPNS0_15instance_holderEPNS0_9class_repE
+    libluabindd.dll._ZN7luabind6detail10object_repC2EPNS0_15instance_holderEPNS0_9class_repE
+    libluabindd.dll._ZN7luabind6detail10object_repD1Ev
+    libluabindd.dll._ZN7luabind6detail10object_repD2Ev
+    libluabindd.dll._ZN7luabind6detail11resume_implEP9lua_Stateii
+    libluabindd.dll._ZN7luabind6detail12add_overloadERKNS_3adl6objectEPKcS4_
+    libluabindd.dll._ZN7luabind6detail12class_id_map13local_id_baseE
+    libluabindd.dll._ZN7luabind6detail12class_id_map3putEyRKNS_7type_idE
+    libluabindd.dll._ZN7luabind6detail12class_id_mapC1Ev
+    libluabindd.dll._ZN7luabind6detail12create_class6stage1EP9lua_State
+    libluabindd.dll._ZN7luabind6detail12create_class6stage2EP9lua_State
+    libluabindd.dll._ZN7luabind6detail12get_instanceEP9lua_Statei
+    libluabindd.dll._ZN7luabind6detail12property_tagEP9lua_State
+    libluabindd.dll._ZN7luabind6detail12registrationC1Ev
+    libluabindd.dll._ZN7luabind6detail12registrationC2Ev
+    libluabindd.dll._ZN7luabind6detail12registrationD0Ev
+    libluabindd.dll._ZN7luabind6detail12registrationD1Ev
+    libluabindd.dll._ZN7luabind6detail12registrationD2Ev
+    libluabindd.dll._ZN7luabind6detail14class_registry12get_registryEP9lua_State
+    libluabindd.dll._ZN7luabind6detail14class_registry9add_classERKNS_7type_idEPNS0_9class_repE
+    libluabindd.dll._ZN7luabind6detail14class_registryC1EP9lua_State
+    libluabindd.dll._ZN7luabind6detail14class_registryC2EP9lua_State
+    libluabindd.dll._ZN7luabind6detail14get_class_nameEP9lua_StateRKNS_7type_idE
+    libluabindd.dll._ZN7luabind6detail14invoke_contextC1Ev
+    libluabindd.dll._ZN7luabind6detail15function_objectC2EPFiP9lua_StateE
+    libluabindd.dll._ZN7luabind6detail15function_objectD0Ev
+    libluabindd.dll._ZN7luabind6detail15function_objectD1Ev
+    libluabindd.dll._ZN7luabind6detail15function_objectD2Ev
+    libluabindd.dll._ZN7luabind6detail17allocate_class_idERKNS_7type_idE
+    libluabindd.dll._ZN7luabind6detail17make_function_auxEP9lua_StatePNS0_15function_objectE
+    libluabindd.dll._ZN7luabind6detail17push_new_instanceEP9lua_StatePNS0_9class_repE
+    libluabindd.dll._ZN7luabind6detail19is_luabind_functionEP9lua_Statei
+    libluabindd.dll._ZN7luabind6detail20handle_exception_auxEP9lua_State
+    libluabindd.dll._ZN7luabind6detail21stack_content_by_nameEP9lua_Statei
+    libluabindd.dll._ZN7luabind6detail22exception_handler_baseD0Ev
+    libluabindd.dll._ZN7luabind6detail22exception_handler_baseD1Ev
+    libluabindd.dll._ZN7luabind6detail23push_instance_metatableEP9lua_State
+    libluabindd.dll._ZN7luabind6detail24do_call_member_selectionEP9lua_StatePKc
+    libluabindd.dll._ZN7luabind6detail26register_exception_handlerEPNS0_22exception_handler_baseE
+    libluabindd.dll._ZN7luabind6detail35not_threadsafe_not_defined_conflictEv
+    libluabindd.dll._ZN7luabind6detail38no_error_checking_not_defined_conflictEv
+    libluabindd.dll._ZN7luabind6detail5pcallEP9lua_Stateii
+    libluabindd.dll._ZN7luabind6detail9class_rep14add_base_classERKNS1_9base_infoE
+    libluabindd.dll._ZN7luabind6detail9class_rep14super_callbackEP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_rep15cache_operatorsEP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_rep19has_operator_in_luaEP9lua_Statei
+    libluabindd.dll._ZN7luabind6detail9class_rep21static_class_gettableEP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_rep22constructor_dispatcherEP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_rep23lua_settable_dispatcherEP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_rep8set_typeERKNS_7type_idE
+    libluabindd.dll._ZN7luabind6detail9class_repC1EP9lua_StatePKc
+    libluabindd.dll._ZN7luabind6detail9class_repC1ERKNS_7type_idEPKcP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_repC2EP9lua_StatePKc
+    libluabindd.dll._ZN7luabind6detail9class_repC2ERKNS_7type_idEPKcP9lua_State
+    libluabindd.dll._ZN7luabind6detail9class_repD1Ev
+    libluabindd.dll._ZN7luabind6detail9class_repD2Ev
+    libluabindd.dll._ZN7luabind7module_C1EP9lua_StatePKc
+    libluabindd.dll._ZN7luabind7module_C2EP9lua_StatePKc
+    libluabindd.dll._ZN7luabind7module_ixENS_5scopeE
+    libluabindd.dll._ZN7luabind8weak_ref4swapERS0_
+    libluabindd.dll._ZN7luabind8weak_refC1EP9lua_StateS2_i
+    libluabindd.dll._ZN7luabind8weak_refC1ERKS0_
+    libluabindd.dll._ZN7luabind8weak_refC1Ev
+    libluabindd.dll._ZN7luabind8weak_refC2EP9lua_StateS2_i
+    libluabindd.dll._ZN7luabind8weak_refC2ERKS0_
+    libluabindd.dll._ZN7luabind8weak_refC2Ev
+    libluabindd.dll._ZN7luabind8weak_refD1Ev
+    libluabindd.dll._ZN7luabind8weak_refD2Ev
+    libluabindd.dll._ZN7luabind8weak_refaSERKS0_
+    libluabindd.dll._ZNK7luabind11cast_failed4whatEv
+    libluabindd.dll._ZNK7luabind5error4whatEv
+    libluabindd.dll._ZNK7luabind5scope9register_EP9lua_State
+    libluabindd.dll._ZNK7luabind6detail10cast_graph4castEPvyyyPKv
+    libluabindd.dll._ZNK7luabind6detail10class_base4nameEv
+    libluabindd.dll._ZNK7luabind6detail10object_rep12get_instanceEy
+    libluabindd.dll._ZNK7luabind6detail10object_rep8is_constEv
+    libluabindd.dll._ZNK7luabind6detail14class_registry10find_classERKNS_7type_idE
+    libluabindd.dll._ZNK7luabind6detail14class_registry11get_classesEv
+    libluabindd.dll._ZNK7luabind6detail14class_registry12cpp_instanceEv
+    libluabindd.dll._ZNK7luabind6detail14class_registry12lua_instanceEv
+    libluabindd.dll._ZNK7luabind6detail14class_registry9cpp_classEv
+    libluabindd.dll._ZNK7luabind6detail14class_registry9lua_classEv
+    libluabindd.dll._ZNK7luabind6detail14invoke_context12format_errorEP9lua_StatePKNS0_15function_objectE
+    libluabindd.dll._ZNK7luabind6detail14invoke_contextcvbEv
+    libluabindd.dll._ZNK7luabind6detail22exception_handler_base8try_nextEP9lua_State
+    libluabindd.dll._ZNK7luabind6detail9class_rep13metatable_refEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep14get_class_typeEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep17get_default_tableEP9lua_State
+    libluabindd.dll._ZNK7luabind6detail9class_rep4nameEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep4typeEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep5basesEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep5castsEv
+    libluabindd.dll._ZNK7luabind6detail9class_rep8allocateEP9lua_State
+    libluabindd.dll._ZNK7luabind6detail9class_rep9get_tableEP9lua_State
+    libluabindd.dll._ZNK7luabind8weak_ref2idEv
+    libluabindd.dll._ZNK7luabind8weak_ref3getEP9lua_State
+    libluabindd.dll._ZNK7luabind8weak_ref5stateEv
+    libluabindd.dll._ZTIN7luabind11cast_failedE
+    libluabindd.dll._ZTIN7luabind5errorE
+    libluabindd.dll._ZTIN7luabind6detail12registrationE
+    libluabindd.dll._ZTIN7luabind6detail15function_objectE
+    libluabindd.dll._ZTIN7luabind6detail22exception_handler_baseE
+    libluabindd.dll._ZTVN7luabind11cast_failedE
+    libluabindd.dll._ZTVN7luabind5errorE
+    libluabindd.dll._ZTVN7luabind6detail12registrationE
+    libluabindd.dll._ZTVN7luabind6detail15function_objectE
+    libluabindd.dll._ZTVN7luabind6detail22exception_handler_baseE
+    lua5.2.dll.luaC_barrier_
+    lua5.2.dll.luaC_barrierback_
+    lua5.2.dll.luaC_barrierproto_
+    lua5.2.dll.luaC_changemode
+    lua5.2.dll.luaC_checkfinalizer
+    lua5.2.dll.luaC_checkupvalcolor
+    lua5.2.dll.luaC_forcestep
+    lua5.2.dll.luaC_freeallobjects
+    lua5.2.dll.luaC_fullgc
+    lua5.2.dll.luaC_newobj
+    lua5.2.dll.luaC_runtilstate
+    lua5.2.dll.luaC_step
+    lua5.2.dll.luaD_call
+    lua5.2.dll.luaD_growstack
+    lua5.2.dll.luaD_hook
+    lua5.2.dll.luaD_pcall
+    lua5.2.dll.luaD_poscall
+    lua5.2.dll.luaD_precall
+    lua5.2.dll.luaD_protectedparser
+    lua5.2.dll.luaD_rawrunprotected
+    lua5.2.dll.luaD_reallocstack
+    lua5.2.dll.luaD_shrinkstack
+    lua5.2.dll.luaD_throw
+    lua5.2.dll.luaE_extendCI
+    lua5.2.dll.luaE_freeCI
+    lua5.2.dll.luaE_freethread
+    lua5.2.dll.luaE_setdebt
+    lua5.2.dll.luaF_close
+    lua5.2.dll.luaF_findupval
+    lua5.2.dll.luaF_freeproto
+    lua5.2.dll.luaF_freeupval
+    lua5.2.dll.luaF_getlocalname
+    lua5.2.dll.luaF_newCclosure
+    lua5.2.dll.luaF_newLclosure
+    lua5.2.dll.luaF_newproto
+    lua5.2.dll.luaF_newupval
+    lua5.2.dll.luaG_aritherror
+    lua5.2.dll.luaG_concaterror
+    lua5.2.dll.luaG_errormsg
+    lua5.2.dll.luaG_ordererror
+    lua5.2.dll.luaG_runerror
+    lua5.2.dll.luaG_typeerror
+    lua5.2.dll.luaH_free
+    lua5.2.dll.luaH_get
+    lua5.2.dll.luaH_getint
+    lua5.2.dll.luaH_getn
+    lua5.2.dll.luaH_getstr
+    lua5.2.dll.luaH_new
+    lua5.2.dll.luaH_newkey
+    lua5.2.dll.luaH_next
+    lua5.2.dll.luaH_resize
+    lua5.2.dll.luaH_resizearray
+    lua5.2.dll.luaH_set
+    lua5.2.dll.luaH_setint
+    lua5.2.dll.luaK_checkstack
+    lua5.2.dll.luaK_codeABC
+    lua5.2.dll.luaK_codeABx
+    lua5.2.dll.luaK_codek
+    lua5.2.dll.luaK_concat
+    lua5.2.dll.luaK_dischargevars
+    lua5.2.dll.luaK_exp2RK
+    lua5.2.dll.luaK_exp2anyreg
+    lua5.2.dll.luaK_exp2anyregup
+    lua5.2.dll.luaK_exp2nextreg
+    lua5.2.dll.luaK_exp2val
+    lua5.2.dll.luaK_fixline
+    lua5.2.dll.luaK_getlabel
+    lua5.2.dll.luaK_goiffalse
+    lua5.2.dll.luaK_goiftrue
+    lua5.2.dll.luaK_indexed
+    lua5.2.dll.luaK_infix
+    lua5.2.dll.luaK_jump
+    lua5.2.dll.luaK_nil
+    lua5.2.dll.luaK_numberK
+    lua5.2.dll.luaK_patchclose
+    lua5.2.dll.luaK_patchlist
+    lua5.2.dll.luaK_patchtohere
+    lua5.2.dll.luaK_posfix
+    lua5.2.dll.luaK_prefix
+    lua5.2.dll.luaK_reserveregs
+    lua5.2.dll.luaK_ret
+    lua5.2.dll.luaK_self
+    lua5.2.dll.luaK_setlist
+    lua5.2.dll.luaK_setoneret
+    lua5.2.dll.luaK_setreturns
+    lua5.2.dll.luaK_storevar
+    lua5.2.dll.luaK_stringK
+    lua5.2.dll.luaL_addlstring
+    lua5.2.dll.luaL_addstring
+    lua5.2.dll.luaL_addvalue
+    lua5.2.dll.luaL_argerror
+    lua5.2.dll.luaL_buffinit
+    lua5.2.dll.luaL_buffinitsize
+    lua5.2.dll.luaL_callmeta
+    lua5.2.dll.luaL_checkany
+    lua5.2.dll.luaL_checkinteger
+    lua5.2.dll.luaL_checklstring
+    lua5.2.dll.luaL_checknumber
+    lua5.2.dll.luaL_checkoption
+    lua5.2.dll.luaL_checkstack
+    lua5.2.dll.luaL_checktype
+    lua5.2.dll.luaL_checkudata
+    lua5.2.dll.luaL_checkunsigned
+    lua5.2.dll.luaL_checkversion_
+    lua5.2.dll.luaL_error
+    lua5.2.dll.luaL_execresult
+    lua5.2.dll.luaL_fileresult
+    lua5.2.dll.luaL_getmetafield
+    lua5.2.dll.luaL_getsubtable
+    lua5.2.dll.luaL_gsub
+    lua5.2.dll.luaL_len
+    lua5.2.dll.luaL_loadbufferx
+    lua5.2.dll.luaL_loadfilex
+    lua5.2.dll.luaL_loadstring
+    lua5.2.dll.luaL_newmetatable
+    lua5.2.dll.luaL_newstate
+    lua5.2.dll.luaL_openlibs
+    lua5.2.dll.luaL_optinteger
+    lua5.2.dll.luaL_optlstring
+    lua5.2.dll.luaL_optnumber
+    lua5.2.dll.luaL_optunsigned
+    lua5.2.dll.luaL_prepbuffsize
+    lua5.2.dll.luaL_pushresult
+    lua5.2.dll.luaL_pushresultsize
+    lua5.2.dll.luaL_ref
+    lua5.2.dll.luaL_requiref
+    lua5.2.dll.luaL_setfuncs
+    lua5.2.dll.luaL_setmetatable
+    lua5.2.dll.luaL_testudata
+    lua5.2.dll.luaL_tolstring
+    lua5.2.dll.luaL_traceback
+    lua5.2.dll.luaL_unref
+    lua5.2.dll.luaL_where
+    lua5.2.dll.luaM_growaux_
+    lua5.2.dll.luaM_realloc_
+    lua5.2.dll.luaM_toobig
+    lua5.2.dll.luaO_arith
+    lua5.2.dll.luaO_ceillog2
+    lua5.2.dll.luaO_chunkid
+    lua5.2.dll.luaO_fb2int
+    lua5.2.dll.luaO_hexavalue
+    lua5.2.dll.luaO_int2fb
+    lua5.2.dll.luaO_nilobject_
+    lua5.2.dll.luaO_pushfstring
+    lua5.2.dll.luaO_pushvfstring
+    lua5.2.dll.luaO_str2d
+    lua5.2.dll.luaP_opmodes
+    lua5.2.dll.luaP_opnames
+    lua5.2.dll.luaS_eqlngstr
+    lua5.2.dll.luaS_eqstr
+    lua5.2.dll.luaS_hash
+    lua5.2.dll.luaS_new
+    lua5.2.dll.luaS_newlstr
+    lua5.2.dll.luaS_newudata
+    lua5.2.dll.luaS_resize
+    lua5.2.dll.luaT_gettm
+    lua5.2.dll.luaT_gettmbyobj
+    lua5.2.dll.luaT_init
+    lua5.2.dll.luaT_typenames_
+    lua5.2.dll.luaU_dump
+    lua5.2.dll.luaU_header
+    lua5.2.dll.luaU_undump
+    lua5.2.dll.luaV_arith
+    lua5.2.dll.luaV_concat
+    lua5.2.dll.luaV_equalobj_
+    lua5.2.dll.luaV_execute
+    lua5.2.dll.luaV_finishOp
+    lua5.2.dll.luaV_gettable
+    lua5.2.dll.luaV_lessequal
+    lua5.2.dll.luaV_lessthan
+    lua5.2.dll.luaV_objlen
+    lua5.2.dll.luaV_settable
+    lua5.2.dll.luaV_tonumber
+    lua5.2.dll.luaV_tostring
+    lua5.2.dll.luaX_init
+    lua5.2.dll.luaX_lookahead
+    lua5.2.dll.luaX_newstring
+    lua5.2.dll.luaX_next
+    lua5.2.dll.luaX_setinput
+    lua5.2.dll.luaX_syntaxerror
+    lua5.2.dll.luaX_token2str
+    lua5.2.dll.luaY_parser
+    lua5.2.dll.luaZ_fill
+    lua5.2.dll.luaZ_init
+    lua5.2.dll.luaZ_openspace
+    lua5.2.dll.luaZ_read
+    lua5.2.dll.lua_absindex
+    lua5.2.dll.lua_arith
+    lua5.2.dll.lua_atpanic
+    lua5.2.dll.lua_callk
+    lua5.2.dll.lua_checkstack
+    lua5.2.dll.lua_close
+    lua5.2.dll.lua_compare
+    lua5.2.dll.lua_concat
+    lua5.2.dll.lua_copy
+    lua5.2.dll.lua_createtable
+    lua5.2.dll.lua_dump
+    lua5.2.dll.lua_error
+    lua5.2.dll.lua_gc
+    lua5.2.dll.lua_getallocf
+    lua5.2.dll.lua_getctx
+    lua5.2.dll.lua_getfield
+    lua5.2.dll.lua_getglobal
+    lua5.2.dll.lua_gethook
+    lua5.2.dll.lua_gethookcount
+    lua5.2.dll.lua_gethookmask
+    lua5.2.dll.lua_getinfo
+    lua5.2.dll.lua_getlocal
+    lua5.2.dll.lua_getmetatable
+    lua5.2.dll.lua_getstack
+    lua5.2.dll.lua_gettable
+    lua5.2.dll.lua_gettop
+    lua5.2.dll.lua_getupvalue
+    lua5.2.dll.lua_getuservalue
+    lua5.2.dll.lua_ident
+    lua5.2.dll.lua_insert
+    lua5.2.dll.lua_iscfunction
+    lua5.2.dll.lua_isnumber
+    lua5.2.dll.lua_isstring
+    lua5.2.dll.lua_isuserdata
+    lua5.2.dll.lua_len
+    lua5.2.dll.lua_load
+    lua5.2.dll.lua_newstate
+    lua5.2.dll.lua_newthread
+    lua5.2.dll.lua_newuserdata
+    lua5.2.dll.lua_next
+    lua5.2.dll.lua_pcallk
+    lua5.2.dll.lua_pushboolean
+    lua5.2.dll.lua_pushcclosure
+    lua5.2.dll.lua_pushfstring
+    lua5.2.dll.lua_pushinteger
+    lua5.2.dll.lua_pushlightuserdata
+    lua5.2.dll.lua_pushlstring
+    lua5.2.dll.lua_pushnil
+    lua5.2.dll.lua_pushnumber
+    lua5.2.dll.lua_pushstring
+    lua5.2.dll.lua_pushthread
+    lua5.2.dll.lua_pushunsigned
+    lua5.2.dll.lua_pushvalue
+    lua5.2.dll.lua_pushvfstring
+    lua5.2.dll.lua_rawequal
+    lua5.2.dll.lua_rawget
+    lua5.2.dll.lua_rawgeti
+    lua5.2.dll.lua_rawgetp
+    lua5.2.dll.lua_rawlen
+    lua5.2.dll.lua_rawset
+    lua5.2.dll.lua_rawseti
+    lua5.2.dll.lua_rawsetp
+    lua5.2.dll.lua_remove
+    lua5.2.dll.lua_replace
+    lua5.2.dll.lua_resume
+    lua5.2.dll.lua_setallocf
+    lua5.2.dll.lua_setfield
+    lua5.2.dll.lua_setglobal
+    lua5.2.dll.lua_sethook
+    lua5.2.dll.lua_setlocal
+    lua5.2.dll.lua_setmetatable
+    lua5.2.dll.lua_settable
+    lua5.2.dll.lua_settop
+    lua5.2.dll.lua_setupvalue
+    lua5.2.dll.lua_setuservalue
+    lua5.2.dll.lua_status
+    lua5.2.dll.lua_toboolean
+    lua5.2.dll.lua_tocfunction
+    lua5.2.dll.lua_tointegerx
+    lua5.2.dll.lua_tolstring
+    lua5.2.dll.lua_tonumberx
+    lua5.2.dll.lua_topointer
+    lua5.2.dll.lua_tothread
+    lua5.2.dll.lua_tounsignedx
+    lua5.2.dll.lua_touserdata
+    lua5.2.dll.lua_type
+    lua5.2.dll.lua_typename
+    lua5.2.dll.lua_upvalueid
+    lua5.2.dll.lua_upvaluejoin
+    lua5.2.dll.lua_version
+    lua5.2.dll.lua_xmove
+    lua5.2.dll.lua_yieldk
+    lua5.2.dll.luai_ctype_
+    lua5.2.dll.luaopen_base
+    lua5.2.dll.luaopen_bit32
+    lua5.2.dll.luaopen_coroutine
+    lua5.2.dll.luaopen_debug
+    lua5.2.dll.luaopen_io
+    lua5.2.dll.luaopen_math
+    lua5.2.dll.luaopen_os
+    lua5.2.dll.luaopen_package
+    lua5.2.dll.luaopen_string
+    lua5.2.dll.luaopen_table

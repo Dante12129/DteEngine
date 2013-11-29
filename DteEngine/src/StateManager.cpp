@@ -3,26 +3,31 @@
 namespace dte
 {
     StateManager::StateManager() = default;
-    StateManager::StateManager(State* first_state)
-    {
-        current_state.reset(first_state);
-    }
+    StateManager::StateManager(std::unique_ptr<State> first) { m_state_stack.push(std::move(first)); }
     StateManager::~StateManager() = default;
 
-    bool StateManager::initialize(State* first_state)
+    void StateManager::HandleEvents(sf::Event& event)
     {
-        current_state.reset(first_state);
-        return static_cast<bool>(current_state);
+        if(m_state_stack.top())
+            m_state_stack.top()->HandleEvents(event);
+    }
+    void StateManager::Logic(sf::Time& dt)
+    {
+        if(m_state_stack.top())
+            m_state_stack.top()->Logic(dt);
+    }
+    void StateManager::Render()
+    {
+        if(m_state_stack.top())
+            m_state_stack.top()->Render();
     }
 
-    void StateManager::HandleEvents() { if(current_state) current_state->HandleEvents(); }
-    void StateManager::Logic(sf::Time& delta) { if(current_state) current_state->Logic(delta); }
-    void StateManager::Render() { if(current_state) current_state->Render(); }
+    std::pair<bool, StateChangeType> StateManager::GetCurrentStatus() { return m_state_stack.top()->CheckState(); }
 
-    void StateManager::SwitchState()
+    void StateManager::NextState()
     {
-        if(current_state)
-            if(current_state->CheckState())
-                current_state.reset(current_state->GetNextState());
+        if(m_state_stack.top())
+            m_state_stack.push(m_state_stack.top()->GetNextState());
     }
+    void StateManager::PrevState() { m_state_stack.pop(); }
 }

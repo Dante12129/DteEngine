@@ -1,7 +1,10 @@
 #ifndef STATE_HPP_INCLUDED
 #define STATE_HPP_INCLUDED
 
-namespace sf { class Time; }
+#include <memory>
+#include <utility>
+
+namespace sf { class Time; class Event; }
 
 /**
  * \brief The base namespace for all library members.
@@ -12,6 +15,12 @@ namespace dte
     /** \addtogroup states
      * \{
      */
+
+     enum class StateChangeType
+     {
+         Next,
+         Prev
+     };
 
     /** \brief Interface that specifies a state in the game.
      *
@@ -32,7 +41,7 @@ namespace dte
              *
              * \return void
              */
-            virtual void HandleEvents() = 0;
+            virtual void HandleEvents(sf::Event& event) = 0;
             /** \brief Handle logic for the state.
              *
              * This is where you do all your main calculations and etc.
@@ -53,14 +62,14 @@ namespace dte
              *
              * \return Whether StateManager needs to change the state.
              */
-            virtual bool CheckState() = 0;
+            virtual std::pair<bool, StateChangeType> CheckState() = 0;
             /** \brief Gets a pointer to the next state that will be run by the manager.
              *
              * StateManager uses this to change to the next state.
              *
              * \return A pointer to the next state to be activated. This pointer should be dynamically allocated.
              */
-            virtual State* GetNextState() = 0;
+            virtual std::unique_ptr<State> GetNextState() = 0;
     };
 
     /** \} */

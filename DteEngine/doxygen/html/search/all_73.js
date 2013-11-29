@@ -10,5 +10,7 @@ var searchData=
   ['statemanager_2ecpp',['StateManager.cpp',['../_state_manager_8cpp.html',1,'']]],
   ['statemanager_2ehpp',['StateManager.hpp',['../_state_manager_8hpp.html',1,'']]],
   ['state',['State',['../group__states.html',1,'']]],
+  ['stringalign_2ecpp',['StringAlign.cpp',['../_string_align_8cpp.html',1,'']]],
+  ['stringalign_2ehpp',['StringAlign.hpp',['../_string_align_8hpp.html',1,'']]],
   ['switchstate',['SwitchState',['../classdte_1_1_state_manager.html#ade5f19286c1ceefc32d58dd1a69b59e9',1,'dte::StateManager']]]
 ];

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">DteEngine
-   &#160;<span id="projectnumber">0.0.4</span>
+   &#160;<span id="projectnumber">0.0.14</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a67053c9ff3ad33446d795c90e78758ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a67053c9ff3ad33446d795c90e78758ba">~StateManager</a> ()</td></tr>
 <tr class="memdesc:a67053c9ff3ad33446d795c90e78758ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default destructor.  <a href="#a67053c9ff3ad33446d795c90e78758ba">More...</a><br/></td></tr>
 <tr class="separator:a67053c9ff3ad33446d795c90e78758ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a81ebe7c54419bac2965c732e776cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a22a81ebe7c54419bac2965c732e776cd">initialize</a> (<a class="el" href="classdte_1_1_state.html">State</a> *first_state)</td></tr>
+<tr class="memdesc:a22a81ebe7c54419bac2965c732e776cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to initalize the manager after construction.  <a href="#a22a81ebe7c54419bac2965c732e776cd">More...</a><br/></td></tr>
+<tr class="separator:a22a81ebe7c54419bac2965c732e776cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c421d6b582b10226250f6d75fc997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_state_manager.html#a632c421d6b582b10226250f6d75fc997">HandleEvents</a> ()</td></tr>
 <tr class="memdesc:a632c421d6b582b10226250f6d75fc997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to handle events for the current state.  <a href="#a632c421d6b582b10226250f6d75fc997">More...</a><br/></td></tr>
 <tr class="separator:a632c421d6b582b10226250f6d75fc997"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +226,31 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a22a81ebe7c54419bac2965c732e776cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dte::StateManager::initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdte_1_1_state.html">State</a> *&#160;</td>
+          <td class="paramname"><em>first_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to initalize the manager after construction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>State* The state to initialize the manager with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool Whether the initialization fails or not. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a591199aa2e6de97fd816f1d8380a2526"></a>
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +322,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 13 2013 22:37:02 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 20 2013 20:07:49 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
