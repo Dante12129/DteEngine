@@ -104,7 +104,7 @@
 			</AutoVersioning>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
-				<doxyfile_project project_number="0.0.14" use_auto_version="1" />
+				<doxyfile_project project_number="0.0.75" use_auto_version="1" />
 				<doxyfile_build extract_all="1" />
 				<doxyfile_warnings />
 				<doxyfile_output />

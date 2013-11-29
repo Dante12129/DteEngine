@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,25 +102,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af5ac346a46150019d1d97bc768561133"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#af5ac346a46150019d1d97bc768561133">MultiArray</a> ()=default</td></tr>
 <tr class="separator:af5ac346a46150019d1d97bc768561133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c19d2ad6234a9444f2bde52755481a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a7c19d2ad6234a9444f2bde52755481a7">MultiArray</a> (unsigned int rows, unsigned int cols)</td></tr>
-<tr class="separator:a7c19d2ad6234a9444f2bde52755481a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d52ecd092099df975acedccdc4afe79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a9d52ecd092099df975acedccdc4afe79">MultiArray</a> (unsigned int rows, unsigned int cols, const T &amp;def_fill)</td></tr>
-<tr class="separator:a9d52ecd092099df975acedccdc4afe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b8a26ead2e14cef88bdef9071c641e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a48b8a26ead2e14cef88bdef9071c641e">MultiArray</a> (unsigned int cols, unsigned int rows)</td></tr>
+<tr class="separator:a48b8a26ead2e14cef88bdef9071c641e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4eaf83b502e2ff52ac2ab6f2c21b78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#abd4eaf83b502e2ff52ac2ab6f2c21b78">MultiArray</a> (unsigned int cols, unsigned int rows, const T &amp;def_fill)</td></tr>
+<tr class="separator:abd4eaf83b502e2ff52ac2ab6f2c21b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06bb4df5d8b3c578e0eb44d48ee6a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#ab06bb4df5d8b3c578e0eb44d48ee6a9a">MultiArray</a> (std::initializer_list&lt; T &gt; init)</td></tr>
+<tr class="separator:ab06bb4df5d8b3c578e0eb44d48ee6a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62ff38e11187cd503d1d0a1303993d57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a62ff38e11187cd503d1d0a1303993d57">~MultiArray</a> ()=default</td></tr>
 <tr class="separator:a62ff38e11187cd503d1d0a1303993d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b1ccea622d1f5157c199840479c640"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a14b1ccea622d1f5157c199840479c640">size</a> ()</td></tr>
-<tr class="separator:a14b1ccea622d1f5157c199840479c640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81f98ff3cd1de5a44802fdac975e702"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#af81f98ff3cd1de5a44802fdac975e702">size</a> () const </td></tr>
+<tr class="separator:af81f98ff3cd1de5a44802fdac975e702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438ce87fa920cef975103079873d9cb1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a438ce87fa920cef975103079873d9cb1">capacity</a> () const </td></tr>
+<tr class="separator:a438ce87fa920cef975103079873d9cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab88e05ae755c572a83b0ced5b01f6b"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#acab88e05ae755c572a83b0ced5b01f6b">GetHeight</a> () const </td></tr>
+<tr class="separator:acab88e05ae755c572a83b0ced5b01f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9343efa65b981564e89aae5ce4c3fc31"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a9343efa65b981564e89aae5ce4c3fc31">GetWidth</a> () const </td></tr>
+<tr class="separator:a9343efa65b981564e89aae5ce4c3fc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201a373c9d74e3add72710c3e953e575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a201a373c9d74e3add72710c3e953e575">resize</a> (std::size_t new_size)</td></tr>
+<tr class="separator:a201a373c9d74e3add72710c3e953e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf907f4c0213cdd52a5deb33bfc74326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#abf907f4c0213cdd52a5deb33bfc74326">push_back</a> (const T &amp;object)</td></tr>
+<tr class="separator:abf907f4c0213cdd52a5deb33bfc74326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf0e2014bb7c7e56964135067aa02eb"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#aecf0e2014bb7c7e56964135067aa02eb">operator()</a> (unsigned int row, unsigned int col)</td></tr>
 <tr class="separator:aecf0e2014bb7c7e56964135067aa02eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f0e042df5f051bcc802b5508ac7b7e"><td class="memItemLeft" align="right" valign="top">T const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a29f0e042df5f051bcc802b5508ac7b7e">operator()</a> (unsigned int row, unsigned int col) const </td></tr>
 <tr class="separator:a29f0e042df5f051bcc802b5508ac7b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726e6809212ca7e4c3d54161b03ec5cd"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a726e6809212ca7e4c3d54161b03ec5cd">operator()</a> (unsigned int element_num)</td></tr>
+<tr class="separator:a726e6809212ca7e4c3d54161b03ec5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a32c99e9ae4076849886515d88e107"><td class="memItemLeft" align="right" valign="top">T const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdte_1_1_multi_array.html#a99a32c99e9ae4076849886515d88e107">operator()</a> (unsigned int element_num) const </td></tr>
+<tr class="separator:a99a32c99e9ae4076849886515d88e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af5ac346a46150019d1d97bc768561133"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -140,11 +157,11 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7c19d2ad6234a9444f2bde52755481a7"></a>
+<a class="anchor" id="a48b8a26ead2e14cef88bdef9071c641e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -153,13 +170,13 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::<a class="el" href="classdte_1_1_multi_array.html">MultiArray</a> </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>rows</em>, </td>
+          <td class="paramname"><em>cols</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>cols</em>&#160;</td>
+          <td class="paramname"><em>rows</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,11 +193,11 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9d52ecd092099df975acedccdc4afe79"></a>
+<a class="anchor" id="abd4eaf83b502e2ff52ac2ab6f2c21b78"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -189,13 +206,13 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::<a class="el" href="classdte_1_1_multi_array.html">MultiArray</a> </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>rows</em>, </td>
+          <td class="paramname"><em>cols</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>cols</em>, </td>
+          <td class="paramname"><em>rows</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -218,11 +235,37 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ab06bb4df5d8b3c578e0eb44d48ee6a9a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::<a class="el" href="classdte_1_1_multi_array.html">MultiArray</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>init</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a62ff38e11187cd503d1d0a1303993d57"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -244,11 +287,86 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a438ce87fa920cef975103079873d9cb1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acab88e05ae755c572a83b0ced5b01f6b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::GetHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9343efa65b981564e89aae5ce4c3fc31"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::GetWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aecf0e2014bb7c7e56964135067aa02eb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -284,7 +402,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -316,11 +434,115 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a14b1ccea622d1f5157c199840479c640"></a>
+<a class="anchor" id="a726e6809212ca7e4c3d54161b03ec5cd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T&amp; <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>element_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99a32c99e9ae4076849886515d88e107"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T const&amp; <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>element_num</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf907f4c0213cdd52a5deb33bfc74326"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a201a373c9d74e3add72710c3e953e575"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>new_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af81f98ff3cd1de5a44802fdac975e702"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -329,7 +551,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">std::size_t <a class="el" href="classdte_1_1_multi_array.html">dte::MultiArray</a>&lt; T &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -347,7 +569,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 20 2013 20:07:49 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 28 2013 23:53:59 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

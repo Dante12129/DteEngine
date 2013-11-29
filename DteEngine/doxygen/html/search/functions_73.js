@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['size',['size',['../classdte_1_1_multi_array.html#a14b1ccea622d1f5157c199840479c640',1,'dte::MultiArray']]],
-  ['statemanager',['StateManager',['../classdte_1_1_state_manager.html#aeac92535200da7cd9e02a6f12f76f509',1,'dte::StateManager::StateManager()'],['../classdte_1_1_state_manager.html#a82a066bd11a6505e4ab987f9b0c9443f',1,'dte::StateManager::StateManager(State *first_state)']]],
-  ['switchstate',['SwitchState',['../classdte_1_1_state_manager.html#ade5f19286c1ceefc32d58dd1a69b59e9',1,'dte::StateManager']]]
+  ['size',['size',['../classdte_1_1_multi_array.html#af81f98ff3cd1de5a44802fdac975e702',1,'dte::MultiArray']]],
+  ['spritesheet',['Spritesheet',['../classdte_1_1_spritesheet.html#a3b519559539a42c4c60d8b3ec15f8521',1,'dte::Spritesheet::Spritesheet()'],['../classdte_1_1_spritesheet.html#a57f1a69522f86021e19a076381629860',1,'dte::Spritesheet::Spritesheet(std::string filename, sf::Vector2u image_dims, sf::Vector2u sprite_dims)']]],
+  ['statemanager',['StateManager',['../classdte_1_1_state_manager.html#aeac92535200da7cd9e02a6f12f76f509',1,'dte::StateManager::StateManager()'],['../classdte_1_1_state_manager.html#a442cd26335179fc0abb361646cbc1944',1,'dte::StateManager::StateManager(std::unique_ptr&lt; State &gt; first)']]]
 ];

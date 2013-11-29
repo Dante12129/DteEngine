@@ -1,9 +1,17 @@
 warning: source ..\Include\StateManager.hpp is not a readable file or directory... skipping.
 warning: source ..\Include\State.hpp is not a readable file or directory... skipping.
-C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:36: warning: argument 'state' of command @param is not found in the argument list of dte::StateManager::initialize(State *first_state)
-C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:36: warning: The following parameters of dte::StateManager::initialize(State *first_state) are not documented:
-  parameter 'first_state'
-C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:51: warning: argument 'sf' of command @param is not found in the argument list of dte::StateManager::Logic(sf::Time &delta)
-C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:51: warning: argument 'Time' of command @param is not found in the argument list of dte::StateManager::Logic(sf::Time &delta)
-C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:51: warning: The following parameters of dte::StateManager::Logic(sf::Time &delta) are not documented:
-  parameter 'delta'
+C:/Users/Main/Documents/Programs/DteEngine/src/Spritesheet.cpp:48: warning: no matching class member found for 
+  sf::IntRect dte::Spritesheet::GetRect(unsigned row, unsigned col) const
+Possible candidates:
+  sf::IntRect dte::Spritesheet::GetRect(unsigned int row, unsigned int col) const 
+  sf::IntRect dte::Spritesheet::GetRect(unsigned int rect_num) const 
+
+C:/Users/Main/Documents/Programs/DteEngine/src/Spritesheet.cpp:49: warning: no matching class member found for 
+  sf::IntRect dte::Spritesheet::GetRect(unsigned rect_num) const
+Possible candidates:
+  sf::IntRect dte::Spritesheet::GetRect(unsigned int row, unsigned int col) const 
+  sf::IntRect dte::Spritesheet::GetRect(unsigned int rect_num) const 
+
+C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:23: warning: argument 'first_state' of command @param is not found in the argument list of dte::StateManager::StateManager(std::unique_ptr< State > first)
+C:/Users/Main/Documents/Programs/DteEngine/Include/Dte/StateManager.hpp:23: warning: The following parameters of dte::StateManager::StateManager(std::unique_ptr< State > first) are not documented:
+  parameter 'first'

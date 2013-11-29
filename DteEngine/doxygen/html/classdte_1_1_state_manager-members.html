@@ -64,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -72,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,18 +95,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a632c421d6b582b10226250f6d75fc997">HandleEvents</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a22a81ebe7c54419bac2965c732e776cd">initialize</a>(State *first_state)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a591199aa2e6de97fd816f1d8380a2526">Logic</a>(sf::Time &amp;delta)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a8a87acbf8d203801fabf50bf908b54df">GetCurrentStatus</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a849e0cc91488cc5f2ed2e8e465733a2a">HandleEvents</a>(sf::Event &amp;event)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#ae8a98132d9ee5a7b8e48b25f54757d41">Logic</a>(sf::Time &amp;dt)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a1a528236cfa7465bb29c33b6bcd0dc9f">NextState</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#ab0b81991e0f60cfbd7e885e57c0371de">PrevState</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a7daef1196efcac9fa0240dc2451d8f50">Render</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#aeac92535200da7cd9e02a6f12f76f509">StateManager</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a82a066bd11a6505e4ab987f9b0c9443f">StateManager</a>(State *first_state)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#ade5f19286c1ceefc32d58dd1a69b59e9">SwitchState</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a67053c9ff3ad33446d795c90e78758ba">~StateManager</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a442cd26335179fc0abb361646cbc1944">StateManager</a>(std::unique_ptr&lt; State &gt; first)</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classdte_1_1_state_manager.html#a67053c9ff3ad33446d795c90e78758ba">~StateManager</a>()</td><td class="entry"><a class="el" href="classdte_1_1_state_manager.html">dte::StateManager</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 20 2013 20:07:49 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 28 2013 23:53:59 for DteEngine by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
