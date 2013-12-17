@@ -738,10 +738,14 @@
 
 1385345599 c:\users\main\documents\programs\dteengine\include\dte\align.hpp
 
-1385324778 source:c:\users\main\documents\programs\dteengine\src\utilities.cpp
+1385704361 source:c:\users\main\documents\programs\dteengine\src\utilities.cpp
 	"Dte/Utilities.hpp"
+	<iostream>
 	<SFML/Graphics/RenderWindow.hpp>
 	"windows.h"
 
-1385324708 c:\users\main\documents\programs\dteengine\include\dte\utilities.hpp
+1385741745 c:\users\main\documents\programs\dteengine\include\dte\utilities.hpp
+	<memory>
+	<type_traits>
+	<utility>
 
