@@ -22,9 +22,4 @@ namespace dte
         std::cerr << "Can't minimize on your system. Sorry."
         #endif
     }
-    template <class T>
-    void setTransparency(T& colorable, sf::Uint8 a)
-    {
-        colorable.setColor({colorable.getColor().r, colorable.getColor().g, colorable.getColor().b, a});
-    }
 }

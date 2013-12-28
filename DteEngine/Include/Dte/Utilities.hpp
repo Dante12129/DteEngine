@@ -4,6 +4,7 @@
 #include <memory>
 #include <type_traits>
 #include <utility>
+#include <SFML/Config.hpp>
 
 namespace sf { class RenderWindow; }
 
@@ -32,6 +33,17 @@ namespace dte
     std::unique_ptr<T> make_unique(Args&&... args)
     {
         return make_unique_helper<T>(std::is_array<T>(), std::forward<Args>(args)...);
+    }
+
+    template <class T>
+    void setTransparency(T& colorable, sf::Uint8 a)
+    {
+        colorable.setColor({colorable.getColor().r, colorable.getColor().g, colorable.getColor().b, a});
+    }
+    template <class T>
+    void setShapeTransparency(T& colorable, sf::Uint8 a)
+    {
+        colorable.setFillColor({colorable.getFillColor().r, colorable.getFillColor().g, colorable.getFillColor().b, a});
     }
 }
 
